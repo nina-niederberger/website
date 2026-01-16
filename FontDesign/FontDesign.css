@@ -180,13 +180,6 @@ body {
   grid-area: image-4;  
 }
 
-.FontDesign-grid__image-5 {
-    grid-area: image-5;
-}
-
-.FontDesign-grid__image-6 {
-    grid-area: image-6;
-}
 
 
 
@@ -201,8 +194,7 @@ body {
   "text text . . "
   "caption caption . ."
   "image-1 image-1 . ."
-  "image-3 image-3 image-4 image-4" 
-  "image-5 image-5 image-6 image-6"
+  "image-3 image-3 image-4 image-4" ;
 } 
 
 .nav {
