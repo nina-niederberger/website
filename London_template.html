@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="London_style.css" />
+
+    <title>TITEL FÜR BROWSERLEISTE EINGEBEN</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      
+      <div class="header-left">
+        <a href="Nina/Nina_template.html" data-i18n="name">Nina Niederberger</a>
+      </div>
+      <div class="header-right">
+        <a href="index.html" data-i18n="about">About</a>
+        <div id="language-switcher" class="language-globe" title="Change language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <div id="language-menu" class="language-menu">
+          <button data-lang="de">DE</button>
+          <button data-lang="en">EN</button>
+          <button data-lang="it">IT</button>
+          <button data-lang="fr">FR</button>
+        </div>
+      </div>
+
+    
+    </header>
+
+    <!-- Hier bauen wir zusammen den Inhalt der Projektseite -->
+    <div class="London-grid">
+      <div class="London-grid__title">
+        <h1 data-i18n="londonTitle">Seeing London Differently</h1>
+      </div>
+
+      <div class="London-grid__caption">
+        <p data-i18n="londonSubtitle">
+          Editorial Design<br />
+          2025
+        </p>
+      </div>
+
+      <div class="London-grid__hero">
+        <img src="imgs/1London.jpg" />
+      </div>
+
+      <div class="London-grid__text"> 
+        <p data-i18n="londonText">
+          Von menschlichen Fakten zu tierischen Gedanken. Dieses Buch führt weg
+          von nüchternen Informationen hin zu lebendigen Geschichten, Gesprächen
+          und Eigenheiten der Tiere. Seeing London Differently – eine andere
+          Perspektive, entstanden aus vielen Blickwinkeln. Die Tiere sind nach
+          ihrer Größe geordnet, sodass das Buch vom menschlichen Blick auf die
+          Tiere immer mehr hin zum Blick der Tiere selbst führt. Fotografien und
+          Texte, die in London entstanden sind, präsentieren 22 verschiedene
+          Tiere, vereint in einem Buch.
+        </p>
+      </div>
+
+      <div class="London-grid__image_1">
+        <img src="imgs/London/Buch_offen_1.jpg" />
+      </div>
+
+      <div class="London-grid__image_3">
+        <img src="imgs/London/Buch_offen_1-2.jpg" />
+      </div>
+
+      <div class="London-grid__image_4">
+        <img src="imgs/London/Buch_offen_1-3.jpg" />
+      </div>
+
+      <div class="London-grid__image_5">
+        <img src="imgs/London/Buch_offen_1-4.jpg" />
+      </div>
+
+      <div class="London-grid__image_6">
+        <img src="imgs/London/Buch_offen_1-6.jpg" />
+      </div>
+
+      <div class="London-grid__image_7">
+        <img src="imgs/London/Buch_offen_1-7.jpg" />
+      </div>
+
+      <div class="London-grid__image_8">
+        <img src="imgs/London/Buch_offen_1-8.jpg" />
+      </div>
+
+      <div class="London-grid__image_9">
+        <img src="imgs/London/Buch_offen_1-9.jpg" />
+      </div>
+
+      <div class="London-grid__image_10">
+        <img src="imgs/London/Buch_offen_1-10.jpg" />
+      </div>
+
+      <div class="London-grid__image_11">
+        <img src="imgs/London/Buch_offen_1-11.jpg" />
+      </div>
+     
+      <div class="London_draft_1" style="grid-area: image-1a">
+        <img src="imgs/F_SlowWorm_NinaNiederberger.jpg" />
+      </div>
+      <div class="London_draft_2" style="grid-area: image-2a">
+        <img src="imgs/LB_01_SlowWorm_NinaNiederberger.jpg" />
+      </div>
+      <div class="London_draft_3" style="grid-area: image-3a">
+        <img src="imgs/LB_02_SlowWorm_NinaNiederberger.jpg" />
+      </div>
+      <div class="London_draft_4" style="grid-area: image-4a">
+        <img src="imgs/LB_03_SlowWorm_NinaNiederberger.jpg" />
+      </div>
+      <div class="London_draft_5" style="grid-area: image-5a;">
+        <img src="imgs/LB_04_SlowWorm_NinaNiederberger.jpg" />
+      </div>
+      <div class="London_draft_6" style="grid-area: image-6a;" >
+        <img src="imgs/SO_SlowWorm_NinaNiederberger.jpg" />
+      </div>
+      <div class="London_draft_7" style="grid-area: image-7a;">
+        <img src="imgs/SW_SlowWorm_NinaNiederberger.jpg" />
+      </div>
+      <div class="London_draft_8" style="grid-area: image-8a;">
+        <img src="imgs/TB_SlowWorm_NinaNiederberger.jpg"/>
+      </div>
+
+
+
+    </div>
+
+    <script>
+      // Language translations
+      let translations = {};
+
+      // Fetch translations from JSON file
+      fetch('translations.json')
+        .then(response => response.json())
+        .then(data => {
+          translations = data;
+          // Set initial language (from localStorage or default to German)
+          const savedLang = localStorage.getItem('preferredLanguage') || 'de';
+          setLanguage(savedLang);
+        })
+        .catch(error => console.error('Error loading translations:', error));
+
+      // Function to change language
+      function setLanguage(lang) {
+        if (!translations[lang]) {
+          console.error('Language not found:', lang);
+          return;
+        }
+
+        // Update all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.getAttribute('data-i18n');
+          if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+          }
+        });
+
+        // Update HTML lang attribute
+        document.documentElement.lang = lang;
+
+        // Save preference
+        localStorage.setItem('preferredLanguage', lang);
+
+        // Update active button state
+        document.querySelectorAll('.language-menu button').forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+        });
+      }
+
+      // Setup language switcher when DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        const languageSwitcher = document.getElementById('language-switcher');
+        const languageMenu = document.getElementById('language-menu');
+
+        // Set initial active state
+        const currentLang = localStorage.getItem('preferredLanguage') || 'de';
+        document.querySelectorAll('.language-menu button').forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
+        });
+
+        // Toggle menu on globe click
+        languageSwitcher.addEventListener('click', function(e) {
+          e.stopPropagation();
+          languageMenu.classList.toggle('active');
+        });
+
+        // Handle language selection
+        document.querySelectorAll('.language-menu button').forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const lang = this.getAttribute('data-lang');
+            setLanguage(lang);
+            languageMenu.classList.remove('active');
+          });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!languageSwitcher.contains(e.target) && !languageMenu.contains(e.target)) {
+            languageMenu.classList.remove('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

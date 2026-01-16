@@ -1,0 +1,276 @@
+ @font-face {
+    font-family: 'Bitcount Prop Single';
+    src: url('/Schrift/Bitcount_Prop_Single/static/BitcountPropSingle-Medium.woff2') format('woff2'),
+         url('/Schrift/Bitcount_Prop_Single/static/BitcountPropSingle-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: 'Bitcount Prop Single', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+.main-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Links / Rechts */
+.header-left a,
+.header-right a{
+  font-size: 12px;
+  line-height:1;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.header-left a:hover,
+.header-right a:hover{
+  opacity: 0.7;
+}
+
+.header-left {
+  flex: 1;
+  text-align: left;
+}
+
+.header-right {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  position: relative;
+}
+
+/* Language Globe Icon */
+.language-globe {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.language-globe svg {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.language-globe:hover svg {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+/* Language Menu */
+.language-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 8px;
+  gap: 4px;
+  flex-direction: column;
+  z-index: 10001;
+}
+
+.language-menu.active {
+  display: flex;
+}
+
+.language-menu button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Bitcount Prop Single', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: center;
+  min-width: 40px;
+}
+
+.language-menu button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.language-menu button.active {
+  background: white !important;
+  color: black !important;
+  border-color: white !important;
+  font-weight: bold;
+}
+
+body {
+    background-color: black;
+}
+
+/* Damit Inhalt nicht vom Header verdeckt wird */
+.content{
+  padding: 100px 20px 40px; /* top padding mindestens Headerhöhe */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.Paris-grid__title {
+  grid-area: title;
+  color: white;
+  font-size: 100px;
+  line-height: 160px;
+  margin-top: -80px;
+  margin-bottom: -60px;
+}
+
+.Paris-grid__caption {
+  grid-area: caption;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.Paris-grid__hero {
+  grid-area: hero;
+  margin: -15px;
+ 
+}
+
+.Paris-grid__text {
+  grid-area: text;
+  color: white;
+  margin-top: -80px;
+}
+
+.Paris-grid__image-1 {
+  grid-area: image-1;  
+}
+
+
+.Paris-grid__image-3 {
+  grid-area: image-3;  
+}
+
+.Paris-grid__image-4 {
+  grid-area: image-4;  
+}
+
+.Paris-grid__image-5 {
+    grid-area: image-5;
+}
+
+.Paris-grid__image-6 {
+    grid-area: image-6;
+}
+
+.Paris-grid__image-7 {
+    grid-area: image-7;
+}
+
+.Paris-grid__image-8 {
+    grid-area: image-8;
+}
+
+.Paris-grid__image-9 {
+    grid-area: image-9;
+}
+
+.Paris-grid__image-10 {
+    grid-area: image-10;
+}
+
+.Paris-grid__image-11 {
+    grid-area: image-11;
+}
+
+.Paris_draft_1 {
+    grid-area: image-1a;
+}
+
+.Paris_draft_2 {
+    grid-area: image-2a;
+}
+
+.Paris_draft_3 {
+    grid-area: image-3a;
+}
+
+.Paris_draft_4 {
+    grid-area: image-4a;
+}
+
+.Paris_draft_5 {
+    grid-area: image-5a;
+}
+
+.Paris_draft_6 {
+    grid-area: image-6a;
+}
+
+.Paris_draft_7 {
+    grid-area: image-7a;
+}
+
+.Paris_draft_8 {
+    grid-area: image-8a;
+}
+
+
+
+.Paris-grid {
+  display: grid;
+  padding: 0 15px 15px 15px;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "hero hero hero hero"
+  "title title title title"
+  "text text . . "
+  "caption caption . ."
+  "image-1 image-1 image-1 image-1"
+  "image-4 image-4 image-5 image-5" 
+  "image-6 image-6 image-7 image-7"
+  "image-8 image-8 image-9 image-9"
+  "image-10 image-10 image-11 image-11"
+  "image-3 image-3 image-3 image-3" 
+  "image-1a image-2a image-3a image-4a"
+  "image-5a image-6a image-7a image-8a"
+} 
+
+.nav {
+  display: grid;
+  align-items: center;
+  padding: 15px 15px;
+  top: 0;
+  position: sticky;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

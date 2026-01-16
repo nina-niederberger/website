@@ -1,0 +1,399 @@
+ @font-face {
+    font-family: 'Bitcount Prop Single';
+    src: url('/Schrift/Bitcount_Prop_Single/static/BitcountPropSingle-Medium.woff2') format('woff2'),
+         url('/Schrift/Bitcount_Prop_Single/static/BitcountPropSingle-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: 'Bitcount Prop Single', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+}
+.main-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Links / Rechts */
+.header-left a,
+.header-right a{
+  font-size: 12px;
+  line-height:1;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.header-left a:hover,
+.header-right a:hover{
+  opacity: 0.7;
+}
+
+.header-left {
+  flex: 1;
+  text-align: left;
+}
+
+.header-right {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  position: relative;
+}
+
+/* Language Globe Icon */
+.language-globe {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.language-globe svg {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.language-globe:hover svg {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+/* Language Menu */
+.language-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 8px;
+  gap: 4px;
+  flex-direction: column;
+  z-index: 10001;
+}
+
+.language-menu.active {
+  display: flex;
+}
+
+.language-menu button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Bitcount Prop Single', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: center;
+  min-width: 40px;
+}
+
+.language-menu button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.language-menu button.active {
+  background: white !important;
+  color: black !important;
+  border-color: white !important;
+  font-weight: bold;
+}
+
+body {
+    background-color: black;
+}
+
+/* Damit Inhalt nicht vom Header verdeckt wird */
+.content{
+  padding: 100px 20px 40px; /* top padding mindestens Headerhöhe */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.Blickwechsel-grid__title {
+  grid-area: title;
+  color: white;
+  font-size: 100px;
+  line-height: 160px;
+  margin-top: -80px;
+  margin-bottom: -60px;
+}
+
+.Blickwechsel-grid__caption {
+  grid-area: caption;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.Blickwechsel-grid__caption-2 {
+    grid-area: caption-2;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Blickwechsel-grid__caption-3 {
+    grid-area: caption-3;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.Blickwechsel-grid__hero {
+  grid-area: hero;
+  margin: -15px;
+ 
+}
+
+.Blickwechsel-grid__text {
+  grid-area: text;
+  color: white;
+  margin-top: -80px;
+}
+
+.Blickwechsel-grid__image-1 {
+  grid-area: image-1;  
+}
+
+.Blickwechsel-grid__image-2 {
+  grid-area: image-2;
+}
+
+.Blickwechsel-grid__image-3 {
+  grid-area: image-3;  
+}
+
+.Blickwechsel-grid__image-4 {
+  grid-area: image-4;  
+}
+
+.Blickwechsel-grid__image-5 {
+    grid-area: image-5;
+}
+
+.Blickwechsel-grid__image-6 {
+    grid-area: image-6;
+}
+
+
+.Blickwechsel-grid__image-8 {
+    grid-area: image-8;
+}
+
+.Blickwechsel-grid__image-9 {
+    grid-area: image-9;
+}
+
+.Blickwechsel-grid__image-10 {
+    grid-area: image-10;
+}
+
+
+.Blickwechsel-grid__image-12 {
+    grid-area: image-12;
+}
+
+.Blickwechsel-grid__image-13 {
+    grid-area: image-13;
+}
+
+.Blickwechsel-grid__video-1 {
+    grid-area: video-1;
+    
+    
+}
+
+.Blickwechsel_draft-1 {
+    grid-area: image-1a;
+}
+
+.Blickwechsel_draft-2 {
+    grid-area: image-2a;
+}
+
+.Blickwechsel_draft-3 {
+    grid-area: image-3a;
+}
+
+.Blickwechsel_draft-4 {
+    grid-area: image-4a;
+}
+
+
+.Blickwechsel_draft-6 {
+    grid-area: image-6a;
+}
+
+.Blickwechsel_draft-7 {
+    grid-area: image-7a;
+}
+
+.Blickwechsel_draft-8 {
+    grid-area: image-8a;
+}
+
+.Blickwechsel_draft-9 {
+    grid-area: image-9a;
+}
+
+.Blickwechsel_draft-10 {
+    grid-area: image-10a;
+}
+
+.Blickwechsel_draft-11 {
+    grid-area: image-11a;
+}
+
+.Blickwechsel_draft-12 {
+    grid-area: image-12a;
+}
+
+.Blickwechsel_draft-13 {
+    grid-area: image-13a;
+}
+
+.Blickwechsel_draft-14 {
+    grid-area: image-14a;
+}
+
+.Blickwechsel_draft-15 {
+    grid-area: image-15a;
+}
+
+.Blickwechsel_draft-16 {
+    grid-area: image-16a;
+}
+
+.Blickwechsel_draft-17 {
+    grid-area: image-17a;
+}
+
+.Blickwechsel_draft-18 {
+    grid-area: image-18a;
+}
+
+.Blickwechsel-grid {
+  display: grid;
+  padding: 0 15px 15px 15px;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 36px;
+  grid-template-areas:
+    "hero hero hero hero"
+    "title title title title "
+    "text text . ."
+    "caption caption . ."
+    "image-1 image-1 image-2 image-2"
+    "image-3 image-3 image-4 image-4"
+    "image-5 image-5 image-6 image-6" 
+    "caption-2 caption-2 . ."
+    "image-12 image-12 image-12 image-12" 
+    "image-8 image-8 image-9 image-9 " 
+    "image-10 image-10 . ." 
+    "caption-3 caption-3 . ."
+    "image-13 image-13 video-1 video-1" 
+    "image-1a image-2a image-3a image-4a"
+    "image-6a image-7a image-8a image-9a"
+    "image-10a image-11a image-12a image-13a"
+    "image-14a image-15a image-16a image-17a"
+    "image-18a . . ." ;
+
+} 
+
+.nav {
+  display: grid;
+  align-items: center;
+  padding: 15px 15px;
+  top: 0;
+  position: sticky;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* MOBILE VERSION (iPhone) ///////////////////////////////////////////////////////////////////////////////////*/
+@media (max-width: 699px) {
+    .Blickwechsel-grid {
+  display: grid;
+  padding: 0 15px 15px 15px;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 36px;
+  grid-template-areas:
+    "hero hero hero hero"
+    "title . . ."
+    "text text text text "
+    "caption caption . ."
+    "image-1 image-1 image-1 image-1"
+    "image-2 "
+    "image-3 image-3 image-4 image-4"
+    "image-5 image-5 image-6 image-6" 
+    "caption-2 caption-2 . ."
+    "image-12 image-12 image-12 image-12" 
+    "image-8 image-8 image-9 image-9 " 
+    "image-10 image-10 . ." 
+    "caption-3 caption-3 . ."
+    "image-13 image-13 video-1 video-1" 
+    "image-1a image-2a image-3a image-4a"
+    "image-6a image-7a image-8a image-9a"
+    "image-10a image-11a image-12a image-13a"
+    "image-14a image-15a image-16a image-17a"
+    "image-18a . . ." ;
+
+} 
+
+.Blickwechsel-grid__title {
+  grid-area: title;
+  color: white;
+  font-size: 20 px;
+  line-height: 160px;
+  margin-top: -80px;
+  margin-bottom: -60px;
+}
+
+
+ 
+  }
+ 
