@@ -272,22 +272,37 @@ body {
     grid-area: image-10a;
 }
 
-.Blickwechsel_draft-11 
-{ grid-area: image-11a; }
+.Blickwechsel_draft-11 {
+    grid-area: image-11a;
+}
 
-.Blickwechsel_draft-12 { grid-area: image-12a; }
+.Blickwechsel_draft-12 {
+    grid-area: image-12a;
+}
 
-.Blickwechsel_draft-13 { grid-area: image-13a; }
+.Blickwechsel_draft-13 {
+    grid-area: image-13;
+}
 
-.Blickwechsel_draft-14 { grid-area: image-14a; }
+.Blickwechsel_draft-14 {
+    grid-area: image-14a;
+}
 
-.Blickwechsel_draft-15 { grid-area: image-15a; }
+.Blickwechsel_draft-15 {
+    grid-area: image-15;
+}
 
-.Blickwechsel_draft-16 { grid-area: image-16a; }
+.Blickwechsel_draft-16 {
+    grid-area: image-16a;
+}
 
-.Blickwechsel_draft-17 { grid-area: image-17a; }
+.Blickwechsel_draft-17 {
+    grid-area: image-17a;
+}
 
-.Blickwechsel_draft-18 { grid-area: image-18a; }
+.Blickwechsel_draft-18 {
+    grid-area: image-18a;
+}
 
 
 .Blickwechsel-grid {
