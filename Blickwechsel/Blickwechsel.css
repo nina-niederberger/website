@@ -183,9 +183,6 @@ body {
   margin-top: -80px;
 }
 
-.Blickwechsel-grid__image-1 {
-  grid-area: image-1;  
-}
 
 .Blickwechsel-grid__image-2 {
   grid-area: image-2;
@@ -195,9 +192,6 @@ body {
   grid-area: image-3;  
 }
 
-.Blickwechsel-grid__image-4 {
-  grid-area: image-4;  
-}
 
 .Blickwechsel-grid__image-5 {
     grid-area: image-5;
@@ -283,9 +277,8 @@ body {
     "title title title title "
     "text text . ."
     "caption caption . ."
-    "image-1 image-1 image-2 image-2"
-    "image-3 image-3 image-4 image-4"
-    "image-5 image-5 image-6 image-6" 
+    "image-2 image-2 image-3 image-3"
+    "image-5 image-5 image-6 image-6"
     "caption-2 caption-2 . ."
     "image-12 image-12 image-12 image-12" 
     "image-8 image-8 image-9 image-9" 
