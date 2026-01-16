@@ -212,9 +212,6 @@ body {
     grid-area: image-8a;
 }
 
-.Master_draft_9 {
-    grid-area: image-9a;
-}
 
 
 .Master-grid {
@@ -230,8 +227,7 @@ body {
     "image-1 image-1 image-2 image-2" 
     "video-1 video-1 . ."
     "image-1a image-2a image-3a image-4a"
-    "image-5a image-6a image-7a image-8a"
-    "image-9a . . ." ; 
+    "image-5a image-6a image-7a image-8a" ;
 } 
 
 .nav {
